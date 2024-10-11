@@ -51,7 +51,7 @@ def index():
                         .classes('w-full')
 
 
-ui.run(storage_secret="#+op38923hasfdoDj")        
+ui.run(host=0.0.0.0, port=80, storage_secret="#+op38923hasfdoDj")        
 
 # def main():
 #     set_default_input()

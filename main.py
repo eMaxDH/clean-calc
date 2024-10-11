@@ -41,9 +41,9 @@ def index():
                         
             with ui.card():
                 with ui.row().classes('w-full'):
-                    ui.number("Time spent on cleaning per visit / h", on_change=calc_period).bind_value(app.storage.user, 'cleaning_time_per_visit') \
+                    ui.number("Time spent on cleaning per visit / h", step=0.5, on_change=calc_period).bind_value(app.storage.user, 'cleaning_time_per_visit') \
                         .classes('w-full')
-                    ui.slider(min=1, max=8, on_change=calc_period).bind_value(app.storage.user, 'cleaning_time_per_visit') \
+                    ui.slider(min=1, max=8, step=0.5, on_change=calc_period).bind_value(app.storage.user, 'cleaning_time_per_visit') \
                         .classes('w-full')
                         
             with ui.row().classes('w-full'):
